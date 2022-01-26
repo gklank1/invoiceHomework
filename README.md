@@ -10,9 +10,9 @@
 
 ---
 
-### Name: Enter your name
+### Name: Garrett Klank
 
-### Email: Enter your OU email
+### Email: gk007120@ohio.edu
 
 ---
 

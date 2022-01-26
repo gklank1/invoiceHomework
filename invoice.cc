@@ -1,8 +1,8 @@
 /**
  *   @file: invoice.cc
- * @author: Enter your name
- *   @date: Enter the date
- *  @brief: Add Description
+ * @author: Garrett Klank
+ *   @date: 1/26/2022
+ *  @brief: Program that creates invoices based off user inputs for monitor purchases
  */
 
 #include <iostream>
