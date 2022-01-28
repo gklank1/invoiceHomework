@@ -45,6 +45,9 @@ int main(int argc, char const *argv[]) {
         cout << "Please enter a lowercase s, or v";
     }
 
+    quantity >= 3 ? discount = 0.05 * price : discount = 0;
+    price = price - discount;
+
     cout << "Do you live in Ohio (yes/no)? ";
     cin >> ohioCheck;
 
@@ -57,8 +60,8 @@ int main(int argc, char const *argv[]) {
         ohio = "No";
     }
 
-    quantity >= 3 ? discount = 0.05 * price : discount = 0;
-    total = price - discount + tax;
+    total = price + tax;
+    
     cout << fixed << setprecision(2);
     cout << "Monitor Invoice" << endl;
     cout << "--------------------------" << endl;
@@ -66,13 +69,14 @@ int main(int argc, char const *argv[]) {
     cout << "       Quantity: "  << quantity << endl;
     cout << "          Price: $" << cost << endl;
     cout << "  Ohio Resident: " << ohio << endl;
-    cout << "    Total price: $" << price << endl;
+    cout << "    Total price: $" << price + discount << endl;
     cout << "--------------------------" << endl;
     cout << "       Discount: $" << discount << endl;
-    cout << "       Subtotal: $" << price - discount << endl;
+    cout << "       Subtotal: $" << price << endl;
     cout << "          Taxes: $" << tax << endl;
     cout << "==========================" << endl;
     cout << "          Total: $" << total << endl;
     cout << "==========================" << endl;
+    
     return 0;
 } /// main
