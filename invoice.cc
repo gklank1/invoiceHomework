@@ -43,6 +43,7 @@ int main(int argc, char const *argv[]) {
     }
     else {
         cout << "Please enter a lowercase s, or v";
+        return(0);
     }
 
     quantity >= 3 ? discount = 0.05 * price : discount = 0;
